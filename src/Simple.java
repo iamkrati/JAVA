@@ -12,7 +12,7 @@ class Main1{
     public void test(){
         //int a=18;
        // int a=18;
-        System.out.println(a);
+        System.out.println(Simple.a);
     }
 }
 class Main2{
