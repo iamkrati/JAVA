@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Array3 {
     public static void main(String[] args) {
 
-      //  for(int i=0;i<arr.length;i++){
+        //  for(int i=0;i<arr.length;i++){
         //    arr[i]=new int;
         //}
         CheckNum obj=new CheckNum();
@@ -35,7 +35,7 @@ class CheckNum {
             if (ch1==arr[i])
             {
                 System.out.println("FOUND");
-            break;}
+                break;}
             else
                 System.out.println("NOT FOUND");
         }
