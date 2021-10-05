@@ -6,11 +6,11 @@ public class StaandnonStatic {
     }
 }
 class StaandnonStaati{
-    Inner ob;
+    //Inner ob;
     int n2=20;
     class Inner{
-        int n2=30;
-        public void display(){
+        static int n2=30;
+        public  void display(){
             int n2=40;
             System.out.println(n2);
             System.out.println(this.n2);
@@ -18,7 +18,7 @@ class StaandnonStaati{
         }
     }
     StaandnonStaati(){
-        ob=new Inner();
+        Inner ob=new Inner();
         ob.display();
     }
 }
