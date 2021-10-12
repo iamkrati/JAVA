@@ -1,6 +1,6 @@
 package Door;
 public class Output {
-    boolean status;
+   boolean status;
      Output(boolean status)
     {
         this.status=status;
