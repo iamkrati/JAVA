@@ -14,12 +14,11 @@ class Door{
             static String Passkey="YesAccess";
             public static void result(String tkey){
                 if(Passkey.equals(tkey))
-                  System.out.println("VALID");
+                    System.out.println("VALID");
                 else
-                   System.out.println("NOT VALID");
+                    System.out.println("NOT VALID");
             }
         }
         Lock.result(key);
     }
 }
-
