@@ -9,7 +9,7 @@ class StaandnonStaati{
     //Inner ob;
     int n2=20;
     class Inner{
-        static int n2=30;
+        int n2=30;
         public  void display(){
             int n2=40;
             System.out.println(n2);
@@ -20,5 +20,7 @@ class StaandnonStaati{
     StaandnonStaati(){
         Inner ob=new Inner();
         ob.display();
+
+
     }
 }
