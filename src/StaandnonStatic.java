@@ -7,7 +7,7 @@ public class StaandnonStatic {
 }
 class StaandnonStaati{
     //Inner ob;
-    int n2=20;
+   int n2=20;
     class Inner{
         int n2=30;
         public  void display(){
