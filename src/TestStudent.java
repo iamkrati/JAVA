@@ -14,6 +14,7 @@ public class TestStudent extends Stud{
         Scanner sc=new Scanner(System.in);
         TestStudent obj=new TestStudent(sc.nextInt(), sc.next());
        // System.out.println(obj.rollno);
+      
         obj.display();
     }
 }
