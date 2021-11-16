@@ -8,8 +8,8 @@ interface Tesst{
     void square();
 }
 class TesstChild implements Tesst{
-    //@Override
     public void square() {
         System.out.println("square  method ");
     }
 }
+

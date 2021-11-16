@@ -1,7 +1,7 @@
 package First;
 
 public class Stud {
-     protected int rollno;
+    protected int rollno;
     public String name;
     public Stud(int rollno, String name) {
         this.rollno = rollno;
@@ -12,3 +12,4 @@ public class Stud {
         System.out.println(name);
     }
 }
+

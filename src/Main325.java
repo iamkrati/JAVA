@@ -1,8 +1,10 @@
 public class Main325 {
     public static void main(String[] args) {
-//        Override obj=new Override();
         Override1 obj1=new Override1();
-        obj1.m1(5);
+        obj1.m1();
+        Override obj=new Override();
+        obj.m1(7);
+
     }
 }
 class Override{
@@ -14,8 +16,8 @@ class Override{
     }
 }
 class Override1 extends  Override{
-//    public void m1() {
+    public void m1() {
 //      super.m1(5);
-//       // System.out.println(a);
-//    }
+        System.out.println("jkhdfk");
+    }
 }
