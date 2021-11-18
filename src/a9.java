@@ -2,7 +2,14 @@ public class a9{
     public static void main(String[] args)
     {
         // String Gender = args[0];
-        int age = Integer.parseInt(args[1]);
+        int age=0;
+        try {
+            age = Integer.parseInt(args[1]);
+        }
+        catch(Exception obj)
+        {
+            System.out.println(obj);
+        }
         if(args.length==0)
         {
             System.out.println("Empty Arguments");
