@@ -13,4 +13,6 @@ public class MyExp {
         System.out.println(obj.getPriority());
         System.out.println(obj.isDaemon());
     }
+    
 }
+
