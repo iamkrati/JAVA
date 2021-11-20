@@ -12,6 +12,5 @@ public class MyExp {
         obj.setPriority(Thread.MIN_PRIORITY);
         System.out.println(obj.getPriority());
         System.out.println(obj.isDaemon());
-
     }
 }

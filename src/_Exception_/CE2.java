@@ -8,6 +8,8 @@ public class CE2 {
         catch (Exception OBJ)
         {
             OBJ.printStackTrace();
+            System.out.println(OBJ);
         }
+        System.out.println("exception checked");
     }
 }
