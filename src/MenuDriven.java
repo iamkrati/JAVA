@@ -1,3 +1,4 @@
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class MenuDriven {
@@ -15,8 +16,14 @@ class Driven{
         System.out.println("1.For find prime number");
         System.out.println("2.For find factorial of a number");
         System.out.println("3.For find fibonacci series");
-        int num;
-        num=sc.nextInt();
+        int num=0;
+        try {
+             num = sc.nextInt();
+        }
+        catch (InputMismatchException ex)
+        {
+            System.out.println(ex);
+        }
         switch(num) {
             case 1:
                 int n;
@@ -28,7 +35,7 @@ class Driven{
                         flag = 1;
                     }
                 }
-                if (flag == 1) {
+                if (flag==1) {
                     System.out.println(n + " is not a prime number");
                 } else {
                     System.out.println(n + " is a prime number");
