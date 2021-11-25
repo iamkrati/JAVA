@@ -29,7 +29,7 @@ class Driven{
                 int n;
                 System.out.println("enter number to check prime or not");
                 n = sc.nextInt();
-                int flag = 0;
+                int flag =0;
                 for (int i = 2; i <= n / 2; i++) {
                     if (n % 2 == 0) {
                         flag = 1;
