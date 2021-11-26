@@ -12,6 +12,6 @@ public class DEMOJDBC {
         {
             System.out.println(rs1.getString(1));
         }
-        //  con.close();
+        con.close();
     }
 }
