@@ -24,17 +24,17 @@ class DE{
         //int flag=0;
         int n= arr1.length;
         for(int i=0;i<n;i++) {
-                if (arr1[i]==ele) {
-             //       flag = 1;
-                    for (int j = i; j < n-1; j++) {
-                        arr1[j] = arr1[j+1];
-                    }
-                    i--;
-                    n--;
+            if (arr1[i]==ele) {
+                //       flag = 1;
+                for (int j = i; j < n-1; j++) {
+                    arr1[j] = arr1[j+1];
                 }
+                i--;
+                n--;
             }
+        }
         for(int i=0;i<n;i++)
             System.out.println(arr1[i]);//("%d ",a[i]);
-      //  System.out.println(Arrays.toString(arr1));
+       // System.out.println(Arrays.toString(arr1));
     }
 }
