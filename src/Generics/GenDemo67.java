@@ -54,7 +54,6 @@ public class GenDemo67 {
 
         // generic resolve type casting problem
         String a90 = s1.get(1);
-
         // to print all values stored in ArrayList we use forEach loop
         for (String res:s1)
         {
