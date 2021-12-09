@@ -14,7 +14,7 @@ public class EmailValidation {
         Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/emailscollect", "root", "");
         PreparedStatement prst = conn.prepareStatement("insert into emails values(?,?)");
         Pattern p1 = Pattern.compile("[A-Za-z]");
-        Pattern p = Pattern.compile("[\\w.]*@gmail.com");
+        Pattern p = Pattern.compile("[\\w._]+@gmail.com");
         Scanner sc = new Scanner(System.in);
         System.out.println("enter name");
         String name;
