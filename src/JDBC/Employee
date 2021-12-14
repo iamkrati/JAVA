@@ -1,0 +1,35 @@
+import java.sql.*;
+import java.util.Scanner;
+
+public class Employee {
+    public static void main(String[] args) throws ClassNotFoundException, SQLException {
+        Class.forName("com.mysql.cj.jdbc.Driver");
+        Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/employee", "root", "");
+        Statement stmt = con.createStatement();
+//
+//        stmt.executeUpdate("insert into emp values('kiran',500)");
+     //   PreparedStatement ps= con.prepareStatement("insert into emp values(?,?)");
+//        PreparedStatement ps1= con.prepareStatement("delete from emp where name=?");
+        PreparedStatement ps1= con.prepareStatement("update  emp set name=? where name=?");
+        Scanner sc=new Scanner(System.in);
+//        String name=sc.next();
+//        int  id=sc.nextInt();
+//        ps.setString(1,name);
+//        ps.setInt(2,id);
+//        ps.execute();
+       System.out.println("enter name to delete");
+       String delname=sc.next();
+        System.out.println("enter name to change");
+        String upname=sc.next();
+      //  stmt.executeUpdate("delete from emp where name='kiran'");
+        ps1.setString(1,upname);
+        ps1.setString(2,delname);
+        ps1.execute();
+       //
+        ResultSet rs = stmt.executeQuery("select * from emp");
+        while (rs.next()) {
+            System.out.println(rs.getString(1) + " " + rs.getInt(2));
+        }
+        con.close();
+    }
+}
