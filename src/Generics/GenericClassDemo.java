@@ -1,5 +1,4 @@
 package Generics;
-
 class GenericClass1<T>
 {
     private T val1;
@@ -12,16 +11,13 @@ class GenericClass1<T>
         this.val1 = val1;
     }
 }
-
 public class GenericClassDemo {
     public static void main(String[] args) {
         // you can create object with any declaration syntax
         GenericClass1<String> obj = new GenericClass1<String>();
         // GenericClass1<String> obj1 = new GenericClass1<>();
         // GenericClass1<String> obj2 = new GenericClass1();
-        obj.setVal1("Neeraj");
+        obj.setVal1("Krati");
         System.out.println(obj.getVal1());
-
-
     }
 }
