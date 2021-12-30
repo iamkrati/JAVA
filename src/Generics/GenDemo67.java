@@ -22,7 +22,7 @@ public class GenDemo67 {
         Integer arr[]= new Integer[10];
         arr[0]= 50;
         arr[1]= 60;
-        arr[2] = "neeraj"; // it will generate compile time error incompatible type
+        arr[2] =80; // it will generate compile time error incompatible type
 
         // Second Senerio
         // using ArrayList class of collection API without generics
@@ -30,16 +30,16 @@ public class GenDemo67 {
         // Integer objects to the ArrayList, By mistake if we are trying to insert
         // any other element we will not  get any comple time error
         // as shown in the following lines
-        ArrayList i = new ArrayList();
+        ArrayList<Integer> i = new ArrayList();
         i.add(10);     // remember it is autoboxing here
         i.add(15);
         i.add(20);
-        i.add("Neeraj");
+      //  i.add("Neeraj");
 
         // if we  retrieve values from ArrayList and assign to another variable
         // type casting is required
         Integer val3 = i.get(2); // observe the error
-        Integer val1 = (Integer) i.get(2);  // type casting required
+        Integer val1 = i.get(2);  // type casting required
         String val2 = String.valueOf(i.get(1));
         System.out.println(val1 + "   "+ val2);
 
@@ -49,9 +49,8 @@ public class GenDemo67 {
         s1.add("neeraj");
         s1.add("kamal");
         // you can only hold String values  generic provide type safety
-        s1.add(new Integer(67));
-        s1.add(68);
-
+//        s1.add(new Integer(67));
+//        s1.add(68);
         // generic resolve type casting problem
         String a90 = s1.get(1);
         // to print all values stored in ArrayList we use forEach loop
@@ -59,6 +58,5 @@ public class GenDemo67 {
         {
             System.out.println(res);
         }
-
     }
 }
