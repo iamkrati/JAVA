@@ -4,8 +4,8 @@ public class Creation {
     public static void main(String[] args) {
         LL ll=new LL();
         ll.addFirst(1);
-        ll.addLast(2);
-        ll.addLast(3);
+//        ll.addLast(2);
+//        ll.addLast(3);
         ll.print();
     }
 }
