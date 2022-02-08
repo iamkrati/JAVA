@@ -6,10 +6,13 @@ public class Deletion {
       o.addLast(20);
       o.addFirst(10);
       o.addLast(30);
-      o.deleteLast();
-      o.deleteFirst();
+        o.print();
+        System.out.println();
 //      o.deleteLast();
-      o.print();
+//      o.deleteFirst();
+      o.delete(4);
+//      o.deleteLast();
+//        o.print();
     }
 }
 class LinkedList{
@@ -66,6 +69,28 @@ class LinkedList{
             snode=snode.next;
         }
         snode.next=null;
+    }
+    public void delete(int pos){
+        try {
+            if (head == null) {
+                System.out.println("list is empty");
+             //   return;
+            } else if (pos == 1) {
+                head = head.next;
+            } else {
+                Node cnode = head;
+                for (int i = 2; cnode.next != null && i < pos; i++) {
+                    cnode = cnode.next;
+                }
+                cnode.next = cnode.next.next;
+            }
+            print();
+        }
+        catch (Exception E){
+            System.out.println("position is out of range so deletion not performed");
+            return;
+
+        }
     }
     public void print(){
         Node cn=head;
