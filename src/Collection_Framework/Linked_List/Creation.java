@@ -4,8 +4,9 @@ public class Creation {
     public static void main(String[] args) {
         LL ll=new LL();
         ll.addFirst(1);
-//        ll.addLast(2);
-//        ll.addLast(3);
+        ll.addFirst(2);
+      //  ll.addLast(2);
+        ll.addLast(3);
         ll.print();
     }
 }
@@ -35,10 +36,11 @@ class LL{
         }
         Node currnode=head;
         while(currnode.next!=null){
+           // System.out.println(currnode.data);
             currnode=currnode.next;
         }
         currnode.next=newnode;
-        newnode.next=null;
+//        newnode.next=null;
     }
     public void print(){
         Node currnode=head;
