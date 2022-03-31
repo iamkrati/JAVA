@@ -10,8 +10,22 @@ public class Implement {
             this.val=val;
     }
    }
-   Implement(){root=null;}
-
+   public Node search(Node root,int val){
+       if(root.val==val){
+           System.out.println("found");
+           return root;
+       }
+       if(root.right==null && root.left==null){
+           System.out.println("not found");
+           return root;
+       }
+       if(val<root.val)
+       search(root.left,val);
+       else if(val>root.val){
+           search(root.right,val);
+       }
+       return root;
+   }
     public static void main(String[] args) {
        Implement obj=new Implement();
        obj.root=obj.insert(obj.root,14);
@@ -22,6 +36,7 @@ public class Implement {
         obj.root=obj.insert(obj.root,10);
         obj.root=obj.insert(obj.root,13);
        obj.inorder(obj.root);
+       obj.search(obj.root,14);
     }
     public Node insert(Node root,int val){
         //Node root=null;
